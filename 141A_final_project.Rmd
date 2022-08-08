@@ -29,7 +29,6 @@ df$USUALPL
 
 
 ### Question 3
-#### random forest
 ```{r}
 cvd_test_df <- df %>% dplyr::filter(CVDTEST == 1 | CVDTEST == 2) # select only yes or no for covid test variable
 cvd_test_df$CVDTEST  <- ifelse(cvd_test_df$CVDTEST == 1, 0, 1) # relevel covid test variable: # 0 = no test, 1 = test
